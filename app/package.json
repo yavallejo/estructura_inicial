@@ -1,0 +1,30 @@
+{
+  "name": "kawacentro",
+  "version": "1.0.0",
+  "description": "Versión actualizada de kawacentro ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jade",
+    "html5",
+    "css3",
+    "nib",
+    "stylus"
+  ],
+  "author": "@yavallejo - Tecnotaxia",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.7.0",
+    "browser-sync": "^2.7.12",
+    "gulp": "^3.9.0",
+    "gulp-changed": "^1.2.1",
+    "gulp-concat": "^2.5.2",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-stylus": "^2.0.5",
+    "nib": "^1.1.0"
+  }
+}

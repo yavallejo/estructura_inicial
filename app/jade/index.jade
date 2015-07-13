@@ -1,0 +1,134 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title Kawacentro News
+		meta(name="description", content="Kawacentro")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="style.css")
+	body
+		header.header.bg-blue-light.box
+			.header__top.bg-blue-dark.row
+				ul.listNone.menu-top
+					li
+						a(href="#")
+							span.icon-home Mi cuenta
+					li
+						a(href="#") Mi lista de deseos
+					li
+						a(href="#") Ingresar
+					li
+						a(href="#") Registrarse
+					li
+						a(href="#") Checkout
+				ul.listNone
+					li
+						a(href="#") $0.00
+					li
+						a(href="#") Items
+				ul.listNone
+					li
+						a(href="#")
+							span.icon-facebook
+					li
+						a(href="#")
+							span.icon-twitter
+			.header__bottom.row
+				.header__bottom--search
+					form(method="POST")
+						label Buscar
+						input(type="search",name="s")
+						input(type="submit",value="Buscar",class="icon-search")
+				.header__bottom--left
+					.logo
+						img.imgResponsive(src="img/logo_kawacentro.png", alt="Logo Kawacentro", width="268" , height="41")
+				.header__bottom--right
+					ul.listNone
+						li
+							a(href="#") Motos
+						li
+							a(href="#") Accesorios
+						li
+							a(href="#") Repuestos
+						li
+							a(href="#") Servicios
+						li
+							a(href="#") Promociones
+
+		main.main.box
+			section
+				article.row
+					aside.newsletter.bg-blue-light.col-xs-12
+						h3.newsletter--title Suscríbete a nuestro boletín
+						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, exercitationem.
+						form.newsletter_form
+							label Escribe tu correo electronico
+							input(type="text", name="buscar")
+							input(type="submit", value="Enviar")
+					.slider.col-xs-12
+						img.imgResponsive(src="img/banner_principal.jpg", alt="slider image 1" , width="841", height="260")
+				article.box.post
+					h3.bg-blue-light Motos Destacadas
+					each val in ['Boxer CT 100','Boxer CT 100','Boxer CT 100','Boxer CT 100']
+						.post__item
+							figure
+								img.imgResponsive(src="img/small.jpg", alt="Boxer CT 100" , width="268" , height="268")
+						.post__information
+							h5.post__information--title= val
+							span.post__information--price 3.099.000
+							span.post__information--important Precio sugerido de venta al publico , el precio no incluye gastos de matricula y SOAT.
+							a(class="post__information--more",href="#",title="Ver más") Ver más
+				article.box.accessories
+					h3.bg-blue-light Accesorios
+					each val in ['Chaqueta Speed','Ktm Casual Shoes','Chaqueta Speed','Ktm Casual Shoes']
+						.accesories__item
+							figure
+								img.imgResponsive(src="img/small.jpg", alt="Boxer CT 100" , width="268" , height="268")
+						.accesories__information
+							h5.accesories__information--title= val
+							span.accesories__information--price 3.099.000
+							a.accesories__information--cart(href="#", title="Agregar al carrito")
+								span.icon-cart %
+							a.accesories__information--more(href="#",title="Ver más") Ver más
+				footer.footer
+					.box.footer__top
+						.footer__top--left.
+							Tuluá Cra 23 N° 25-44 Tel: 2258403 - 2253131 | Buga Cra 11 N° 1-01 Tel: 2369436 - 2276058
+						.footer__top--right
+							ul.listNone
+								li
+									a(href="#") Contacto
+								li
+									a(href="#") Puntos de venta
+					.box.footer__bottom
+						.footer__bottom--tecnotaxia.
+							con el estímulo de Tecnotaxia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+		script window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
+
+
+
+
+
+
+
+
+
+
